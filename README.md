@@ -1,2 +1,2 @@
-# dotfiles-wsl
+# WSL
 My dotfiles for WSL

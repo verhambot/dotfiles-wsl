@@ -1,0 +1,28 @@
+UPDATE :
+
+- apt
+- Neovim
+- Miniconda
+- Golang
+- CUDA Toolkit 12.6.3
+- CUDA Toolkit 12.8.1
+
+
+DOCS :
+
+- Added `ZDOTDIR` to `/etc/zsh/zshenv`
+
+- Neovim
+    - Install location : `/opt/nvim-linux-x86_64`
+    - Symlink binary : `/usr/local/bin/nvim`
+
+- CUDA Toolkit 12.6
+    - `/etc/apt/preferences.d/cuda-repository-pin-600`
+    - `/usr/share/keyrings/cuda-56752864-keyring.gpg`
+
+- CUDA Toolkit 12.8
+    - `/etc/apt/preferences.d/cuda-repository-pin-600`
+    - `/usr/share/keyrings/cuda-2EAA0A0A-keyring.gpg`
+
+- Golang
+    - `/usr/local/go`

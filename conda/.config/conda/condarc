@@ -1,0 +1,8 @@
+show_channel_urls: True
+
+auto_activate_base: False
+
+changeps1: False
+
+create_default_packages:
+  - pip

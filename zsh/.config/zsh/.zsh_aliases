@@ -1,0 +1,12 @@
+alias gst="git status"
+
+alias fd="fdfind --hidden --no-ignore"
+alias fnd="fdfind --hidden --no-ignore --exclude \*.svg --exclude \*.png --exclude \*.jpg"
+
+alias bat="batcat -p"
+
+alias ls="eza"
+
+alias reload="exec $SHELL"
+
+alias :q="exit"
