@@ -18,6 +18,8 @@ export PLATFORMIO_SETTING_PROJECTS_DIR="$HOME/projects"
 
 typeset -U path PATH
 
+path=("$HOME/.local/bin" $path)
+
 path=("/usr/local/go/bin" $path)
 
 path=("/usr/local/cuda/bin" $path)
