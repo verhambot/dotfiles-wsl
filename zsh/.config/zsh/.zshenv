@@ -12,8 +12,8 @@ export GOPATH="$HOME/.local/share/go"
 # source "$CARGO_HOME/env"
 
 
-# export PLATFORMIO_CORE_DIR="$HOME/.local/share/platformio"
-# export PLATFORMIO_SETTING_PROJECTS_DIR="$HOME/Projects"
+export PLATFORMIO_CORE_DIR="$HOME/.local/share/platformio"
+export PLATFORMIO_SETTING_PROJECTS_DIR="$HOME/projects"
 
 
 typeset -U path PATH
