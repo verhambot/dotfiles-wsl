@@ -4,6 +4,7 @@ UPDATE :
 - Neovim
 - Miniconda
 - Golang
+- Rust
 - CUDA Toolkit 12.6.3
 - CUDA Toolkit 12.8.1
 

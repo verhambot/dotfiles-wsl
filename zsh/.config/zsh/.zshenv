@@ -7,9 +7,9 @@ export EDITOR="nvim"
 export GOPATH="$HOME/.local/share/go"
 
 
-# export RUSTUP_HOME="$HOME/.local/share/rustup"
-# export CARGO_HOME="$HOME/.local/share/cargo"
-# source "$CARGO_HOME/env"
+export RUSTUP_HOME="$HOME/.local/share/rustup"
+export CARGO_HOME="$HOME/.local/share/cargo"
+source "$CARGO_HOME/env"
 
 
 # export PLATFORMIO_CORE_DIR="$HOME/.local/share/platformio"
