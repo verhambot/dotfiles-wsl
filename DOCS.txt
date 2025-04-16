@@ -26,6 +26,3 @@ DOCS :
 
 - Golang
     - `/usr/local/go`
-
-- PlatformIO IDE
-    - `$HOME/.local/bin`
