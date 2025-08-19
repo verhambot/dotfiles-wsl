@@ -6,3 +6,6 @@ changeps1: False
 
 create_default_packages:
   - pip
+  - black
+  - flake8
+  - isort
