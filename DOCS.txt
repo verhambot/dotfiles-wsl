@@ -5,8 +5,10 @@ UPDATE :
 - Miniconda
 - Golang
 - Rust
+- Zig
 - CUDA Toolkit 12.6.3
 - CUDA Toolkit 12.8.1
+- CUDA Toolkit 11.8.0
 
 
 DOCS :
@@ -16,6 +18,12 @@ DOCS :
 - Neovim
     - Install location : `/opt/nvim-linux-x86_64`
     - Symlink binary : `/usr/local/bin/nvim`
+
+- CUDA Toolkit 11.8.0
+    - `/etc/apt/preferences.d/cuda-repository-pin-600`
+    - `/usr/share/keyrings/cuda-9EA88183-keyring.gpg`
+    - Issue with installing `libtinfo5`
+        - Temporarily add `http://old-releases.ubuntu.com/ubuntu/` to `/etc/apt/sources.list.d/ubuntu.sources`
 
 - CUDA Toolkit 12.6
     - `/etc/apt/preferences.d/cuda-repository-pin-600`
@@ -27,3 +35,6 @@ DOCS :
 
 - Golang
     - `/usr/local/go`
+
+- Zig
+    - `/opt/zig-x86_64-linux-0.15.0-dev.1380+e98aeeb73`
