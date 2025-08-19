@@ -47,14 +47,6 @@ require("lazy").setup({
             }
         },
         {
-            "ellisonleao/gruvbox.nvim",
-            opts = {
-                bold = false,
-                italic = { strings = false },
-                contrast = "hard"
-            }
-        },
-        {
             "navarasu/onedark.nvim",
             opts = {
                 style = "warmer"
