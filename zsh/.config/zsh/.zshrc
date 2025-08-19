@@ -118,8 +118,8 @@ PROMPT+=$'%B$(__nvm_get_node_version)%b'
 PROMPT+=$'\n%F{white}%(!.#.$)%f '
 
 
-# source "$NVM_DIR/nvm.sh" --no-use
-# source "$NVM_DIR/bash_completion"
+source "$NVM_DIR/nvm.sh" --no-use
+source "$NVM_DIR/bash_completion"
 
 
 # >>> conda initialize >>>

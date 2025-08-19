@@ -1,7 +1,7 @@
 export EDITOR="nvim"
 
 
-# export NVM_DIR="$HOME/.local/share/nvm"
+export NVM_DIR="$HOME/.local/share/nvm"
 
 
 export GOPATH="$HOME/.local/share/go"
@@ -10,6 +10,9 @@ export GOPATH="$HOME/.local/share/go"
 export RUSTUP_HOME="$HOME/.local/share/rustup"
 export CARGO_HOME="$HOME/.local/share/cargo"
 source "$CARGO_HOME/env"
+
+
+export ZIG_HOME="/opt/zig-x86_64-linux-0.15.0-dev.1380+e98aeeb73"
 
 
 # export PLATFORMIO_CORE_DIR="$HOME/.local/share/platformio"
@@ -23,6 +26,8 @@ path=("$HOME/.local/bin" $path)
 path=("/usr/local/go/bin" $path)
 
 path=("/usr/local/cuda/bin" $path)
+
+path=($ZIG_HOME $path)
 
 export PATH
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
