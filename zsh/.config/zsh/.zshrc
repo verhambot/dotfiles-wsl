@@ -127,3 +127,13 @@ eval "$(uvx --generate-shell-completion zsh)"
 
 
 source "$HOME/.config/zsh/.zsh_aliases"
+
+# autoload -Uz add-zsh-hook
+#
+# fahh() {
+#     if [[ $? -gt 0 ]]; then
+#         ffplay -loglevel quiet -nodisp -autoexit ~/fahh.aac  >/dev/null 2>&1 &!
+#     fi
+# }
+#
+# add-zsh-hook precmd fahh
