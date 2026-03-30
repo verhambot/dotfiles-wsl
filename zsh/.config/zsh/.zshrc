@@ -87,14 +87,14 @@ function __parse_git_dirty() {
     return ret
 }
 
-function __conda_env_version() {
-    local ret=$?;
-    if [ -n "${CONDA_DEFAULT_ENV}" ]
-    then
-        echo -n " %F{yellow}py:(%F{white}${CONDA_DEFAULT_ENV##*/}%F{yellow})%f"
-    fi
-    return ret
-}
+# function __conda_env_version() {
+#     local ret=$?;
+#     if [ -n "${CONDA_DEFAULT_ENV}" ]
+#     then
+#         echo -n " %F{yellow}py:(%F{white}${CONDA_DEFAULT_ENV##*/}%F{yellow})%f"
+#     fi
+#     return ret
+# }
 
 function __nvm_get_node_version() {
     local ret=$?;
@@ -112,7 +112,7 @@ PROMPT+=$'%B%F{red}%(1j. ↓%j.)%f%b'
 
 PROMPT+=$'%B${vcs_info_msg_0_}%b'
 PROMPT+=$'%B%F{white}$(__parse_git_dirty)%f%b'
-PROMPT+=$'%B$(__conda_env_version)%b'
+# PROMPT+=$'%B$(__conda_env_version)%b'
 PROMPT+=$'%B$(__nvm_get_node_version)%b'
 
 PROMPT+=$'\n%F{white}%(!.#.$)%f '
@@ -122,20 +122,8 @@ source "$NVM_DIR/nvm.sh" --no-use
 source "$NVM_DIR/bash_completion"
 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/amoghsk/.local/share/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/amoghsk/.local/share/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/amoghsk/.local/share/miniconda/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/amoghsk/.local/share/miniconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
 
 
 source "$HOME/.config/zsh/.zsh_aliases"
