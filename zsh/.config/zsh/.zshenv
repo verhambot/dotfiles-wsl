@@ -5,6 +5,7 @@ export NVM_DIR="$HOME/.local/share/nvm"
 
 
 export GOPATH="$HOME/.local/share/go"
+export GOBIN="$GOPATH/bin"
 
 
 export RUSTUP_HOME="$HOME/.local/share/rustup"
@@ -24,6 +25,7 @@ typeset -U path PATH
 path=("$HOME/.local/bin" $path)
 
 path=("/usr/local/go/bin" $path)
+path=($GOBIN $path)
 
 path=("/usr/local/cuda/bin" $path)
 
