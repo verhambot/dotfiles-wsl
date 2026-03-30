@@ -52,6 +52,7 @@ require("lazy").setup({
                 style = "warmer"
             }
         },
+        { "juanedi/predawn.vim" },
         {
             "goolord/alpha-nvim",
             config = function ()
@@ -72,7 +73,8 @@ vim.keymap.set("", "<C-UP>", "<C-w>k", { noremap = true })
 vim.keymap.set("", "<C-RIGHT>", "<C-w>l", { noremap = true })
 
 
-vim.cmd("colorscheme onedark")
+vim.cmd("colorscheme predawn")
+vim.cmd("hi LineNr ctermfg=245 ctermbg=235 cterm=NONE guifg=#8d8d8d guibg=#282828 gui=NONE")
 
 
 vim.g.loaded_netrw = 1
